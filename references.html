@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>References – Water Table Depth & ML Poster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg-color: #f5f7fb;
+      --card-bg: #ffffff;
+      --accent: #1e88e5;
+      --accent-soft: #e3f2fd;
+      --text-main: #222222;
+      --text-muted: #555555;
+      --header-bg: #0b1c33;
+      --header-text: #f5f7fb;
+      --border-radius: 14px;
+      --shadow-soft: 0 6px 18px rgba(15, 23, 42, 0.08);
+      --max-width: 900px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, sans-serif;
+      background: radial-gradient(circle at top left, #e3f2fd 0, #f5f7fb 45%, #ffffff 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .wrapper { width: 100%; max-width: var(--max-width); }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--header-bg);
+      color: var(--header-text);
+      border-radius: 999px;
+      padding: 0.45rem 1.2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .navbar-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.9rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: var(--header-text);
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    header { text-align: center; margin-bottom: 2.2rem; }
+
+    h1 {
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      margin-bottom: 0.35rem;
+      letter-spacing: 0.02em;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .tag span:first-child { font-size: 1rem; }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-soft);
+      padding: 1.75rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.5rem;
+    }
+
+    ol { list-style: decimal; padding-left: 1.2rem; }
+    li + li { margin-top: 0.9rem; }
+
+    .ref-authors { font-weight: 600; }
+    .ref-title { font-style: italic; }
+    .ref-journal { font-weight: 500; }
+
+    .ref-doi a {
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .ref-doi a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 1.75rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    @media (min-width: 768px) {
+      .card { padding: 2rem; }
+      li + li { margin-top: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+      <div class="navbar-title">AGU 2025 – Poster Extras</div>
+      <div class="nav-links">
+        <a href="references.html" class="active">References</a>
+        <a href="features.html">Input Features</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>References</h1>
+      <p class="subtitle">
+        Supplementary reference list for the AGU 2025 poster titled: 
+              Simulation of Water Table Depths in a Forested Wetland System in the Carolinas using Data-Driven Approaches 
+
+      </p>
+      <div class="tag">
+        
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        
+        <ol>
+          <li>
+            <span class="ref-authors">Amatya, D. M., Chescheir, G. M., Williams, T. M., Skaggs, R. W., &amp; Tian, S.</span>
+            (2019).
+            <span class="ref-title">
+              Long-term water table dynamics of forested wetlands: Drivers and effects on hydrology in the southeastern Atlantic Coastal Plain.
+            </span>
+            <span class="ref-journal">Wetlands, 40</span>, 65–79.
+            <span class="ref-doi">
+              <a href="https://doi.org/10.1007/s13157-019-01153-y" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.1007/s13157-019-01153-y
+              </a>
+            </span>
+          </li>
+
+          <li>
+            <span class="ref-authors">Fan, Y., Li, H., &amp; Miguez-Macho, G.</span>
+            (2013).
+            <span class="ref-title">Global patterns of groundwater table depth.</span>
+            <span class="ref-journal">Science, 339(6122)</span>, 940–943.
+            <span class="ref-doi">
+              <a href="https://doi.org/10.1126/science.1229881" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.1126/science.1229881
+              </a>
+            </span>
+          </li>
+
+          <li>
+            <span class="ref-authors">Janssen, J., Tootchi, A., &amp; Ameli, A. A.</span>
+            (2025).
+            <span class="ref-title">
+              Tackling water table depth modeling via machine learning: From proxy observations to verifiability.
+            </span>
+            <span class="ref-journal">Advances in Water Resources, 201</span>, 104955.
+            <span class="ref-doi">
+              <a href="https://doi.org/10.1016/j.advwatres.2025.104955" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.1016/j.advwatres.2025.104955
+              </a>
+            </span>
+          </li>
+
+          <li>
+            <span class="ref-authors">Koch, J., Gotfredsen, J., Schneider, R., Troldborg, L., Stisen, S., &amp; Henriksen, H. J.</span>
+            (2021).
+            <span class="ref-title">
+              High-resolution water table modeling of shallow groundwater using a knowledge-guided gradient boosting decision tree model.
+            </span>
+            <span class="ref-journal">Frontiers in Water, 3</span>, 701726.
+            <span class="ref-doi">
+              <a href="https://doi.org/10.3389/frwa.2021.701726" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.3389/frwa.2021.701726
+              </a>
+            </span>
+          </li>
+
+          <li>
+            <span class="ref-authors">Ma, Y., Leonarduzzi, E., Defnet, A., Melchior, P., Condon, L. E., &amp; Maxwell, R. M.</span>
+            (2023).
+            <span class="ref-title">
+              Water table depth estimates over the contiguous United States using a random forest model.
+            </span>
+            <span class="ref-journal">Groundwater, 61(6)</span>, 643–660.
+            <span class="ref-doi">
+              <a href="https://doi.org/10.1111/gwat.13362" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.1111/gwat.13362
+              </a>
+            </span>
+          </li>
+
+          <li>
+            <span class="ref-authors">Taylor, C. J., &amp; Alley, W. M.</span>
+            (2001).
+            <span class="ref-title">
+              Ground-water-level monitoring and the importance of long-term water-level data (U.S. Geological Survey Circular 1217).
+            </span>
+            <span class="ref-journal">U.S. Geological Survey.</span>
+            <span class="ref-doi">
+              <a href="https://doi.org/10.3133/cir1217" target="_blank" rel="noopener noreferrer">
+                https://doi.org/10.3133/cir1217
+              </a>
+            </span>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      Simulation of Water Table Depths in a Forested Wetland System in the Carolinas using Data-Driven Approaches 
+    </footer>
+  </div>
+</body>
+</html>

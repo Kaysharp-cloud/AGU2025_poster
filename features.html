@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Input Features – Water Table Depth & ML Poster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- same styles as references.html -->
+  <style>
+    :root {
+      --bg-color: #f5f7fb;
+      --card-bg: #ffffff;
+      --accent: #1e88e5;
+      --accent-soft: #e3f2fd;
+      --text-main: #222222;
+      --text-muted: #555555;
+      --header-bg: #0b1c33;
+      --header-text: #f5f7fb;
+      --border-radius: 14px;
+      --shadow-soft: 0 6px 18px rgba(15, 23, 42, 0.08);
+      --max-width: 900px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, sans-serif;
+      background: radial-gradient(circle at top left, #e3f2fd 0, #f5f7fb 45%, #ffffff 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .wrapper { width: 100%; max-width: var(--max-width); }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--header-bg);
+      color: var(--header-text);
+      border-radius: 999px;
+      padding: 0.45rem 1.2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .navbar-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.9rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: var(--header-text);
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    header { text-align: center; margin-bottom: 2.2rem; }
+
+    h1 {
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      margin-bottom: 0.35rem;
+      letter-spacing: 0.02em;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-soft);
+      padding: 1.75rem 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.8rem;
+      font-size: 0.92rem;
+    }
+
+    thead {
+      background: #0b1c33;
+      color: #f5f7fb;
+    }
+
+    th, td {
+      padding: 0.55rem 0.6rem;
+      text-align: left;
+    }
+
+    tbody tr:nth-child(odd) {
+      background: #e4e8ee;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f4f5f7;
+    }
+
+    th:first-child,
+    td:first-child {
+      width: 18%;
+      font-weight: 600;
+    }
+
+    th:last-child,
+    td:last-child {
+      width: 10%;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 1.75rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    @media (min-width: 768px) {
+      .card { padding: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+      <div class="navbar-title">AGU 2025 – Poster Extras</div>
+      <div class="nav-links">
+        <a href="references.html">References</a>
+        <a href="features.html" class="active">Input Features</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Model Input Features</h1>
+      <p class="subtitle">
+        Summary of meteorological and land surface variables used to model daily water table depth.
+      </p>
+    </header>
+
+    <main>
+      <section class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>dayl</td><td>Duration of the daylight period.</td><td>D</td></tr>
+            <tr><td>prcp</td><td>Daily total precipitation.</td><td>D</td></tr>
+            <tr><td>srad</td><td>Incident shortwave radiation flux density.</td><td>D</td></tr>
+            <tr><td>tmax</td><td>Daily maximum air temperature.</td><td>D</td></tr>
+            <tr><td>tmin</td><td>Daily minimum air temperature.</td><td>D</td></tr>
+            <tr><td>vp</td><td>Partial pressure of water vapor.</td><td>D</td></tr>
+            <tr><td>Surf_tavg</td><td>Surface skin temperature.</td><td>G</td></tr>
+            <tr><td>Evap_soil</td><td>Direct evaporation from soil.</td><td>G</td></tr>
+            <tr><td>Evap</td><td>Evapotranspiration.</td><td>G</td></tr>
+            <tr><td>GWS</td><td>Ground water storage.</td><td>G</td></tr>
+            <tr><td>Qg</td><td>Heat flux.</td><td>G</td></tr>
+            <tr><td>Qsb</td><td>Baseflow–groundwater runoff.</td><td>G</td></tr>
+            <tr><td>Qs</td><td>Storm surface runoff.</td><td>G</td></tr>
+            <tr><td>SM_P</td><td>Profile soil moisture.</td><td>G</td></tr>
+            <tr><td>SM_RZ</td><td>Root zone soil moisture.</td><td>G</td></tr>
+            <tr><td>SM_S</td><td>Surface soil moisture.</td><td>G</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      “D” = DAYMET; “G” = GLDAS 
+    </footer>
+  </div>
+</body>
+</html>
